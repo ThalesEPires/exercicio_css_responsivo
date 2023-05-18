@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(8, 43, 43);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(63, 63, 63);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-left: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    color: aliceblue;
+}
+
+nav {
+    margin-left: 750px;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container-flex {
+    display: flex;
+}
+
+section {
+    margin: 50px 200px;
+    background-color: rgb(4, 100, 100);
+    padding: 25px;
+}
+
+.loja {
+    display: flex;
+}
+
+
+#sobre-a-loja img {
+    max-height: 200px;
+    margin: 15px;
+}
+
+#sobre-a-loja h2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#sobre-a-loja p {
+    margin-top: 12px;
+}
+
+.veiculos li img {
+    max-width: 100%;
+    height: 140px;
+}
+
+.veiculos {
+    flex-wrap: wrap;
+}
+
+.veiculos li h3 {
+    margin: 16px 0;
+}
+
+.veiculos li {
+    max-width: 25%;
+    list-style: none;
+}
+
+.veiculos p {
+    max-width: 98%;
+    margin-left: 3px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .loja {
+        display: block;
+    }
+
+    nav {
+        margin-left: 25px;
+    }
+
+    header {
+        padding: 10px;
+        display: block;
+    }
+
+    section {
+        margin-left: 0px;
+        background-color: rgb(8, 43, 43);
+    }
+
+    #sobre-a-loja img {
+        max-height: 150px;
+        margin: 0px;
+    }
+
+    .veiculos {
+        display: block;
+    }
+
+    .veiculos li img {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+    .veiculos h3 {
+        font-size: 30px;
+    }
+
+    .veiculos li {
+        max-width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #sobre-a-loja {
+        display: block;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+    
+    section {
+        padding: auto;
+        margin: 30px;
+    }
+
+    header {
+        padding: 10px;
+        display: flex;
+    }
+
+    nav {
+        margin-left: 400px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .loja {
+        display: block;
+    }
+
+    .veiculos {
+        display: block;
+    }
+
+    .veiculos li img {
+        max-width: 100%;
+        height: 380px;
+    }
+
+    .veiculos li {
+        max-width: 100%;
+        font-size: 20px;
+    }
+
+    #sobre-a-loja img {
+        max-height: 400px;
+        margin: 0px;
+    }
+
+    .veiculos li h3 {
+        margin: 16px 0;
+        font-size: 40px;
+    }
+
+    .veiculos li {
+        font-size: 25px;
+    }
+
+    button {
+        margin-bottom: 25px;
+        padding: 22px;
+    }
+
+    #sobre-a-loja p {
+        font-size: 20px;
+    }
+}
